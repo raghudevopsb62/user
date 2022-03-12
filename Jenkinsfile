@@ -84,7 +84,7 @@ pipeline {
         sh '''
           TAG=$(cat VERSION | grep "^#[0-9].[0-9].[0-9]" | head -1|sed -e "s|#|v|")
           echo $TAG >version
-          zip -r cart-${TAG}.zip node_modules server.js version
+          zip -r user-${TAG}.zip node_modules server.js version
         '''
       }
     }
@@ -98,7 +98,7 @@ pipeline {
       steps {
         sh '''
           TAG=$(cat VERSION | grep "^#[0-9].[0-9].[0-9]" | head -1|sed -e "s|#|v|")
-          curl -v -u admin:admin123 --upload-file cart-${TAG}.zip http://172.31.9.227:8081/repository/cart/cart-${TAG}.zip
+          curl -v -u admin:admin123 --upload-file user-${TAG}.zip http://172.31.9.227:8081/repository/user/user-${TAG}.zip
         '''
       }
     }
