@@ -1,3 +1,5 @@
 @Library('roboshop') _
 env.COMPONENT="user"
-nodejs()
+env.TYPE="nodejs"
+mainCI()
+
