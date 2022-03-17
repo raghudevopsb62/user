@@ -8,3 +8,4 @@ variable "PORT" {}
 variable "TRIGGER" {
   default = "no"
 }
+variable "APP_VERSION" {}

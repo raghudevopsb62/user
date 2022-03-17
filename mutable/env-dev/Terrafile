@@ -1,0 +1,3 @@
+ec2-mutable:
+  source:  "https://github.com/raghudevopsb62/terraform-mutable-ec2.git"
+  version: "main"

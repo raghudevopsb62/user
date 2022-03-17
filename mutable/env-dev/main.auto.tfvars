@@ -1,3 +1,0 @@
-COMPONENT = "user"
-ENV       = "dev"
-
