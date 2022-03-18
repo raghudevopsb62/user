@@ -50,6 +50,10 @@ locals {
     {
       name  = "project_name"
       value = "roboshop"
+    },
+    {
+      name  = "Monitor"
+      value = "yes"
     }
   ]
   RESOURCE_ID_COUNT = (var.OD_INSTANCE_COUNT * 2) + (var.SPOT_INSTANCE_COUNT * 3)
