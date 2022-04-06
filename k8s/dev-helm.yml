@@ -4,4 +4,7 @@ image:
 health:
   path: /health
   port: "8080"
-
+configMap:
+  enabled: true
+  data:
+    REDIS_HOST: redis-master
