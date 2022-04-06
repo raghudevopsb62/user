@@ -8,3 +8,10 @@ configMap:
   enabled: true
   data:
     REDIS_HOST: redis-master
+resources:
+   limits:
+     cpu: 500m
+     memory: 512Mi
+   requests:
+     cpu: 500m
+     memory: 512Mi
